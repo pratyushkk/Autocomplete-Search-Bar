@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap");
+
+body {
+  width: auto;
+  height: 100vh;
+  background-color: #a0c3e2;
+  font-family: poppins;
+  color: #090a0a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 400px;
+  position: relative;
+}
+
+.autocomplete-input {
+  padding: 20px 15px;
+  font-size: 20px;
+  box-sizing: Border-box;
+  border-radius: 20px;
+  color: #064e8d;
+  background-color: #c9d8e5;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+  border: none;
+  width: 500px;
+}
+
+.autocomplete-input::placeholder {
+  color: #064e8d;
+  font-size: 17px;
+}
+.autocomplete-input:focus {
+  outline: none;
+}
+
+.autocomplete-list {
+  list-style-type: none;
+  margin-top: 10px;
+  padding: 0;
+  background-color: #c9d8e5;
+  width: 500px;
+  max-height: 200px;
+  overflow-y: auto;
+  box-sizing: Border-box;
+  border-radius: 20px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  color: #064e8d;
+  background-color: #c9d8e5;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+  border: none;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.autocomplete-list li {
+  padding: 15px;
+  cursor: pointer;
+}
+.autocomplete-list::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
